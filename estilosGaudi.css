@@ -1,0 +1,356 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2{
+	color: white;
+	margin-top: 20px;
+	margin-left: 80px;	
+}
+
+#comoLlegar {
+	color: white;
+	margin-top: 20px;
+	margin-left: 0px;
+	text-align: center;
+}
+
+/*header*/
+.contenedorNav{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.nav{
+	color: rgb(212, 5, 5);
+	box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
+	font-weight: bolder;
+	margin: 5px;
+	width: 150px;
+	height: 60%;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*cuerpo, foto inicio home*/
+.presentacion{
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;	
+}
+
+.presentacionFoto{
+	background: url(imgGaudi/dunas\ suave.png) no-repeat; 
+	background-size: 100%;
+	height: 35rem;
+	width: 120vw;
+	align-items: center;	
+}
+
+/*texto ppal*/	
+.textoHome{
+	font-size: 9em;
+    font-family: 'Anybody', cursive;
+	font-family: 'Rock Salt', cursive;
+	transition: width 4s;
+    color: rgb(155, 5, 5);
+    margin: 1em 1em 1em 1.5em
+}
+
+.textoHome:hover {
+	color: rgb(6, 46, 59); /*transición/animación*/
+  }
+
+.textoObraPedrera{
+	font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(238, 238, 136);
+    margin: 1em 1em 1em 1.5em;
+}
+
+.textoObraBatlo{
+	font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+    color: rgb(44, 21, 54);
+    margin: 1em 1em 1em 1.5em;
+}
+
+.textoObraSagrada{
+	font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(223, 78, 33);
+    margin: 1em 1em 1em 1.5em;
+}
+
+
+/*contenedor de obras, cards*/
+
+.contenedor{
+	width: 98%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	display: flex;
+	gap: 20px;
+}
+
+
+.contenedorObras{
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
+.obraPedrera{
+	background: url(imgGaudi/Mila.jpg) no-repeat;
+	background-size: 100%;
+	height: 600px;
+	width: 600px;
+	margin-bottom: 4%;
+}
+
+.textoLateral{
+	background-size: 40%;	
+	padding: 20px;
+	height: 600px;
+	width: 600px;
+}
+
+.card {
+	width: 25%;
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card .textos {
+	height: 100%;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+h3{
+	color: white;
+}
+
+
+/*obras*/
+.obras{
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.mapas{
+	display: flex;
+	justify-content: center;
+	column-gap: 20px;
+}
+
+footer{
+    background-color: white;
+    color: rgb(212, 5, 5);
+	font-weight: bolder;
+    width: 100%;
+	text-align: center;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    height: 80px;
+    margin-bottom: 0;
+}
+
+.fa-brands{
+	color: rgb(212, 5, 5);
+	size: 20%;
+}
+
+
+/********Formulario**********/
+section {
+	max-width: 80%;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+} 
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input{
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 100%;
+	background: rgb(158, 1, 1);
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----   Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/* ----- -----  Mediaqueries Formulario ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar
+	.mapas {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}

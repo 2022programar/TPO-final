@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4731c28030.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilosGaudi.css">
+    
+	<title>Gaudi</title>
+</head>
+
+<body>
+    <header>
+		<div class="contenedorNav">
+			<a class="nav" href="index.html">Home</a>
+            <a class="nav" href="pedrera.html">La Pedrera</a> 
+            <a class="nav" href="batlo.html">Casa Batló</a>
+            <a class="nav" href="sagrada.html">Sagrada Familia</a>
+            <a class="nav" href="biografia.html">Biografía</a>
+            <a class="nav" href="contacto.html">Contacto</a>
+		</div>
+	</header>
+
+    <h1 style="text-align: center">Contacto</h1>
+        
+        <section>
+
+            <h3>Si desea recibir más información, regístrese aquí</h3> <br><br> 
+            
+            <form action="" class="formulario" id="formulario">
+
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Tu nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Escriba su nombre aquí...">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>   
+                    <p class="formulario__input-error">El nombre sólo puede contener letras.</p>
+                </div>
+
+                <!-- Grupo: Apellido -->
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Tu apellido</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Escriba su apellido aquí...">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El apellido sólo puede contener letras.</p>
+                </div>
+
+                <!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+             <!-- Grupo: Comentarios -->
+             <div class="formulario__grupo" id="grupo__comentarios">
+                <label for="comentarios" class="formulario__label">Comentarios</label>
+                <div class="formulario__grupo-input">                                  
+                <textarea name="comentario" cols="70" rows="10" placeholder="comentarios aquí..."></textarea> <br><br>
+            </div>
+           
+                
+            
+            <!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>        
+            
+            </section>
+            
+                 
+
+                
+            
+            <br><br>
+            <h2 id="comoLlegar">Cómo llegar:</h2>
+            <br><br>
+            <div class="mapas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.0270229849725!2d2.1597137149274763!3d41.39521950347348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a293998ae1d5%3A0xc49fa3624f371e6a!2sCasa%20Mil%C3%A0!5e0!3m2!1sen!2sar!4v1651948532791!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.193279076245!2d2.1625536149273437!3d41.39160875369726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ed494b4161%3A0x40d2782f9e2e4e0f!2sCasa%20Batll%C3%B3!5e0!3m2!1sen!2sar!4v1651948254906!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.639537891591!2d2.172167114927757!3d41.40363390295167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sLa%20Sagrada%20Familia!5e0!3m2!1sen!2sar!4v1651948573109!5m2!1sen!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+                <br><br><br>
+            
+          </p>
+          <script src="js/formulario.js"></script>
+          <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        
+        
+
+          <footer>
+            
+            <a class="redsoc" href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                <a class="redsoc" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                <a class="redsoc" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+
+
+            <p style="text-align: center;">Derechos reservados @2022</p>
+
+        </footer>
+</body>
+</html>
